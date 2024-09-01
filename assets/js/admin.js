@@ -251,12 +251,12 @@
 		// Add currently selected form to the AJAX request for the "exclude fields" field.
 		// The form key is used in the backend to return the fields for the currently selected form.
 		acf.addFilter('select2_ajax_data', function (data, args, $input, field, instance) {
-			if (field.data.key != 'field_af_block_exclude_fields') {
+			if (field.data?.key !== 'field_af_block_exclude_fields') {
 				return data;
 			}
 
-			var $block = field.$el.closest('.acf-block-component');
-			var form_field = acf.getField($block.find('.acf-field-af-block-form'));
+			const $block = field.$el.closest('.acf-block-component');
+			const form_field = acf.getField($block.find('.acf-field-af-block-form'));
 
 			data.form = form_field.val();
 			return data;
