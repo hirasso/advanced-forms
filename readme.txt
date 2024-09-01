@@ -1,7 +1,7 @@
 === Advanced Forms for ACF ===
 Contributors: philkurth, fabianlindfors
 Tags: acf, advanced custom fields, form, acf form, contact form
-Stable tag: 1.9.3.5
+Stable tag: 1.9.3.6
 Requires at least: 5.4.0
 Tested up to: 6.6
 Requires PHP: 7.1
@@ -67,6 +67,10 @@ Yes. Versions 5.6 or lower of ACF are not supported.
 3. Example of location rules on an ACF field group
 
 == Changelog ==
+
+= 1.9.3.6 =
+
+* Fixed bug preventing taxonomy terms from loading in field's conditinal logic settings.
 
 = 1.9.3.5 =
 
