@@ -48,6 +48,7 @@
   },
   "require-dev": {
     "roots/wordpress": "^6.9",
+    "wp-cli/wp-cli": "^2.12",
     "wpackagist-plugin/advanced-custom-fields": "^6.7"
   }
 }
